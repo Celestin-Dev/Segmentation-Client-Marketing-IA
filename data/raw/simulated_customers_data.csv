@@ -1,0 +1,401 @@
+Customer_ID,Name,Age,Gender,Location,Join_Date,Total_Spent,_segment_reel_pour_validation
+2001,Ivy A.,50,Female,Philadelphia,2022-05-17,190.02,Occasional
+2002,Quinn B.,47,Female,Chicago,2023-08-02,1849.79,Loyal Saver
+2003,Sam C.,25,Female,San Diego,2023-04-06,1926.19,Young Active
+2004,Quinn D.,24,Female,San Diego,2023-06-27,1259.16,Young Active
+2005,Diana E.,56,Female,Houston,2023-08-09,413.48,Occasional
+2006,Oscar F.,43,Male,Houston,2022-05-26,197.52,Occasional
+2007,Grace G.,32,Male,Houston,2022-07-13,1951.3,VIP
+2008,Charlie H.,54,Male,New York,2023-04-23,2698.64,Loyal Saver
+2009,Charlie I.,22,Male,Philadelphia,2022-08-22,2171.3,Young Active
+2010,Leo J.,27,Female,San Diego,2022-07-26,1517.72,Young Active
+2011,Leo K.,30,Male,Philadelphia,2023-11-07,4281.76,VIP
+2012,Henry L.,52,Female,New York,2022-08-18,3984.37,Loyal Saver
+2013,Henry M.,45,Male,San Antonio,2022-10-31,2399.16,Loyal Saver
+2014,Bob N.,33,Female,Houston,2023-06-02,56.4,Occasional
+2015,Karen O.,52,Male,Houston,2023-09-27,382.59,Occasional
+2016,Karen P.,42,Male,Phoenix,2023-03-30,188.32,Occasional
+2017,Diana Q.,57,Male,Phoenix,2023-04-03,256.42,Occasional
+2018,Nina R.,22,Female,Phoenix,2022-08-26,3608.72,Young Active
+2019,Frank S.,23,Female,Philadelphia,2022-12-13,318.18,Occasional
+2020,Bob T.,21,Male,San Antonio,2023-05-31,226.02,Occasional
+2021,Sam U.,23,Male,New York,2023-10-17,2057.6,Young Active
+2022,Eva V.,39,Female,Houston,2023-08-31,2946.42,VIP
+2023,Bob W.,37,Male,San Diego,2022-04-30,378.38,Occasional
+2024,Charlie X.,61,Female,Philadelphia,2023-06-23,228.5,Occasional
+2025,Sam Y.,26,Female,Los Angeles,2023-02-18,2436.38,Young Active
+2026,Charlie Z.,55,Female,Chicago,2022-09-08,3944.42,Loyal Saver
+2027,Frank A.,23,Female,Houston,2022-08-31,361.07,Occasional
+2028,Charlie B.,27,Female,Houston,2022-01-28,1714.4,Young Active
+2029,Oscar C.,25,Male,Los Angeles,2022-11-21,3955.5,Young Active
+2030,Mona D.,47,Female,Philadelphia,2022-07-08,5011.65,VIP
+2031,Tina E.,23,Male,Philadelphia,2022-04-11,3083.64,Young Active
+2032,Frank F.,61,Female,New York,2022-11-05,267.24,Occasional
+2033,Eva G.,31,Female,New York,2022-09-06,3512.05,VIP
+2034,Diana H.,58,Male,Philadelphia,2023-09-19,2170.97,Loyal Saver
+2035,Charlie I.,63,Male,Los Angeles,2023-08-10,2685.76,Loyal Saver
+2036,Sam J.,53,Male,San Diego,2022-01-28,1781.73,Loyal Saver
+2037,Paul K.,18,Female,Chicago,2022-07-01,773.34,Occasional
+2038,Eva L.,32,Female,San Diego,2022-01-11,4639.11,VIP
+2039,Diana M.,29,Male,New York,2023-05-19,1956.9,Young Active
+2040,Grace N.,50,Female,New York,2023-11-04,410.78,Occasional
+2041,Alice O.,30,Female,New York,2022-06-03,2357.48,VIP
+2042,Eva P.,18,Male,Chicago,2022-05-29,2915.3,Young Active
+2043,Quinn Q.,48,Female,New York,2022-12-18,3777.75,VIP
+2044,Alice R.,56,Male,Philadelphia,2022-01-08,3450.86,Loyal Saver
+2045,Charlie S.,51,Male,New York,2022-03-01,75.82,Occasional
+2046,Frank T.,21,Male,San Diego,2022-10-24,3065.59,Young Active
+2047,Frank U.,38,Female,New York,2022-10-08,323.19,Occasional
+2048,Grace V.,18,Female,Phoenix,2022-04-27,1671.21,Young Active
+2049,Frank W.,26,Female,Philadelphia,2022-05-31,2405.97,Young Active
+2050,Henry X.,21,Male,Los Angeles,2022-07-27,446.16,Occasional
+2051,Ivy Y.,56,Female,Phoenix,2023-10-04,3087.3,Loyal Saver
+2052,Frank Z.,59,Male,Los Angeles,2022-07-30,2770.0,Loyal Saver
+2053,Sam A.,48,Female,Chicago,2022-02-01,3972.63,Loyal Saver
+2054,Oscar B.,65,Male,Philadelphia,2023-08-10,2156.17,Loyal Saver
+2055,Grace C.,24,Male,New York,2022-10-01,1673.36,Young Active
+2056,Charlie D.,63,Female,New York,2022-11-01,3314.45,Loyal Saver
+2057,Alice E.,47,Male,Houston,2022-10-06,5057.74,VIP
+2058,Rita F.,31,Male,Houston,2023-04-27,27.0,Occasional
+2059,Oscar G.,39,Male,Houston,2023-03-14,3044.48,VIP
+2060,Oscar H.,40,Female,San Antonio,2022-05-06,92.61,Occasional
+2061,Mona I.,19,Female,San Diego,2023-03-30,133.23,Occasional
+2062,Quinn J.,32,Female,Chicago,2022-04-18,61.7,Occasional
+2063,Oscar K.,65,Male,Los Angeles,2023-06-22,3473.82,Loyal Saver
+2064,Henry L.,47,Male,San Diego,2022-09-11,549.61,Occasional
+2065,Eva M.,20,Female,San Diego,2022-06-27,356.83,Occasional
+2066,Rita N.,20,Female,Chicago,2022-03-22,3255.46,Young Active
+2067,Ivy O.,36,Female,San Antonio,2023-07-20,4589.02,VIP
+2068,Rita P.,57,Female,San Diego,2022-12-09,3026.43,Loyal Saver
+2069,Rita Q.,37,Male,New York,2023-05-10,4573.39,VIP
+2070,Alice R.,66,Male,Houston,2023-05-15,2787.99,Loyal Saver
+2071,Alice S.,68,Male,Phoenix,2022-08-09,1970.15,Loyal Saver
+2072,Nina T.,62,Female,Phoenix,2023-03-26,75.98,Occasional
+2073,Jack U.,30,Female,Phoenix,2021-12-28,3910.39,VIP
+2074,Charlie V.,55,Female,Chicago,2022-07-29,3267.83,Loyal Saver
+2075,Mona W.,28,Female,Houston,2022-04-29,1195.6,Young Active
+2076,Jack X.,19,Female,Chicago,2022-11-25,1746.26,Young Active
+2077,Nina Y.,61,Male,New York,2022-01-11,3035.26,Loyal Saver
+2078,Oscar Z.,32,Female,New York,2023-10-29,2650.83,VIP
+2079,Grace A.,55,Female,Houston,2022-08-03,321.3,Occasional
+2080,Grace B.,40,Female,San Diego,2023-08-04,5763.22,VIP
+2081,Eva C.,55,Female,Chicago,2023-06-03,2793.02,Loyal Saver
+2082,Frank D.,29,Female,Chicago,2022-09-11,1796.65,Young Active
+2083,Ivy E.,40,Male,San Antonio,2022-08-05,159.44,Occasional
+2084,Grace F.,33,Male,Chicago,2022-09-21,3414.99,VIP
+2085,Karen G.,60,Female,San Antonio,2022-07-19,30.82,Occasional
+2086,Henry H.,51,Female,Phoenix,2022-05-22,102.46,Occasional
+2087,Oscar I.,29,Female,San Antonio,2021-12-23,2031.31,Young Active
+2088,Frank J.,27,Female,New York,2023-08-24,1302.64,Young Active
+2089,Grace K.,50,Male,Chicago,2023-10-15,2413.82,Loyal Saver
+2090,Eva L.,26,Female,New York,2023-05-03,2321.77,Young Active
+2091,Sam M.,32,Male,San Antonio,2022-04-06,4069.37,VIP
+2092,Frank N.,25,Male,San Antonio,2023-09-30,2868.16,Young Active
+2093,Karen O.,41,Female,San Diego,2023-03-01,3453.33,Loyal Saver
+2094,Diana P.,18,Female,San Diego,2023-01-26,2238.88,Young Active
+2095,Sam Q.,69,Male,Los Angeles,2023-08-18,2954.63,Loyal Saver
+2096,Oscar R.,22,Female,San Antonio,2022-05-20,1969.71,Young Active
+2097,Karen S.,27,Female,New York,2022-02-25,2838.67,Young Active
+2098,Bob T.,28,Male,Chicago,2022-08-17,463.3,Occasional
+2099,Jack U.,36,Male,Chicago,2022-03-25,3611.04,VIP
+2100,Paul V.,40,Male,Chicago,2022-02-22,5255.33,VIP
+2101,Rita W.,30,Male,Phoenix,2023-09-08,4194.97,VIP
+2102,Charlie X.,19,Female,Los Angeles,2023-03-01,2406.11,Young Active
+2103,Frank Y.,61,Male,New York,2023-06-05,437.86,Occasional
+2104,Alice Z.,27,Male,Houston,2022-04-11,1720.17,Young Active
+2105,Charlie A.,37,Male,Chicago,2022-12-30,,Loyal Saver
+2106,Diana B.,18,Male,San Antonio,2022-08-29,443.28,Occasional
+2107,Rita C.,39,Male,Phoenix,2023-06-08,104.2,Occasional
+2108,Charlie D.,50,Female,San Diego,2022-05-17,2693.71,Loyal Saver
+2109,Sam E.,28,Male,Los Angeles,2022-02-25,652.48,Occasional
+2110,Mona F.,33,Male,San Diego,2022-04-28,4094.09,VIP
+2111,Jack G.,25,Female,Phoenix,2022-10-13,536.04,Occasional
+2112,Leo H.,46,Female,San Diego,2023-02-12,236.52,Occasional
+2113,Henry I.,58,Female,Houston,2023-05-03,2289.58,Loyal Saver
+2114,Quinn J.,44,Female,Chicago,2022-01-20,4095.22,Loyal Saver
+2115,Frank K.,25,Male,Los Angeles,2023-10-19,2065.71,Young Active
+2116,Quinn L.,53,Male,Phoenix,2022-04-09,3050.93,Loyal Saver
+2117,Sam M.,59,Female,Chicago,2022-07-12,2866.5,Loyal Saver
+2118,Grace N.,20,Male,San Antonio,2023-01-18,589.37,Occasional
+2119,Rita O.,49,Male,Los Angeles,2022-11-17,,Loyal Saver
+2120,Ivy P.,28,Male,Los Angeles,2022-01-20,1634.7,Young Active
+2121,Karen Q.,37,Male,Houston,2022-01-13,3234.84,Loyal Saver
+2122,Frank R.,65,Female,San Antonio,2021-12-25,3061.77,Loyal Saver
+2123,Paul S.,21,Female,San Antonio,2022-11-11,703.6,Occasional
+2124,Mona T.,34,Male,Chicago,2022-12-19,2623.6,VIP
+2125,Nina U.,36,Female,New York,2022-08-28,515.06,Occasional
+2126,Leo V.,56,Male,San Diego,2023-10-20,281.12,Occasional
+2127,Sam W.,63,Female,Los Angeles,2023-08-06,2955.61,Loyal Saver
+2128,Henry X.,56,Male,Chicago,2023-02-11,2654.07,Loyal Saver
+2129,Bob Y.,53,Female,Philadelphia,2022-12-15,4382.52,VIP
+2130,Sam Z.,24,Male,Chicago,2022-06-22,1266.65,Young Active
+2131,Paul A.,59,Female,San Antonio,2022-10-29,26.65,Occasional
+2132,Jack B.,49,Male,Los Angeles,2023-06-01,419.01,Occasional
+2133,Oscar C.,30,Female,San Diego,2022-02-16,5967.53,VIP
+2134,Ivy D.,25,Female,Philadelphia,2022-08-18,886.14,Occasional
+2135,Oscar E.,54,Female,San Diego,2023-03-27,2128.04,Loyal Saver
+2136,Paul F.,53,Female,San Diego,2023-04-16,97.62,Occasional
+2137,Ivy G.,28,Female,Houston,2022-08-29,2085.42,Young Active
+2138,Sam H.,18,Male,Chicago,2022-08-02,1384.52,Young Active
+2139,Sam I.,27,Male,New York,2022-11-07,778.43,Occasional
+2140,Paul J.,57,Male,San Diego,2022-09-10,1817.08,Loyal Saver
+2141,Nina K.,37,Female,Los Angeles,2023-05-25,2495.27,Loyal Saver
+2142,Sam L.,47,Male,Phoenix,2022-08-19,459.6,Occasional
+2143,Diana M.,18,Female,San Antonio,2022-12-17,1838.02,Young Active
+2144,Mona N.,60,Female,New York,2023-03-31,45.9,Occasional
+2145,Diana O.,40,Male,San Antonio,2023-01-15,622.16,Occasional
+2146,Eva P.,46,Female,Phoenix,2021-12-18,4839.24,VIP
+2147,Rita Q.,29,Male,Los Angeles,2022-01-30,1482.15,Young Active
+2148,Sam R.,29,Male,Houston,2023-11-08,3380.22,Young Active
+2149,Ivy S.,38,Male,New York,2022-07-10,2888.43,VIP
+2150,Mona T.,48,Female,New York,2023-02-15,432.39,Occasional
+2151,Oscar U.,60,Female,Los Angeles,2022-10-27,1675.49,Loyal Saver
+2152,Jack V.,19,Male,Los Angeles,2022-09-09,515.26,Occasional
+2153,Henry W.,35,Male,San Antonio,2022-11-21,2891.05,VIP
+2154,Jack X.,24,Male,Los Angeles,2022-04-04,1668.89,Young Active
+2155,Tina Y.,50,Male,San Diego,2022-12-08,2444.94,Loyal Saver
+2156,Alice Z.,50,Male,Phoenix,2022-08-12,483.78,Occasional
+2157,Sam A.,19,Female,Phoenix,2023-09-14,3406.03,Young Active
+2158,Rita B.,61,Male,New York,2022-05-13,3938.13,Loyal Saver
+2159,Leo C.,22,Female,New York,2023-10-16,62.12,Occasional
+2160,Karen D.,21,Female,San Diego,2023-08-20,2153.76,Young Active
+2161,Leo E.,55,Female,Los Angeles,2023-02-28,536.34,Occasional
+2162,Grace F.,18,Female,New York,2022-03-03,1389.28,Young Active
+2163,Eva G.,28,Male,Chicago,2022-11-19,1727.86,Young Active
+2164,Oscar H.,20,Female,New York,2022-05-21,2385.02,Young Active
+2165,Grace I.,34,Female,Chicago,2023-03-10,3878.43,VIP
+2166,Nina J.,65,Female,San Diego,2022-02-13,2895.25,Loyal Saver
+2167,Quinn K.,59,Male,Los Angeles,2023-03-18,787.53,Occasional
+2168,Oscar L.,22,Female,Phoenix,2021-12-18,312.11,Occasional
+2169,Henry M.,38,Male,New York,2022-10-14,4104.7,VIP
+2170,Karen N.,19,Female,San Diego,2022-03-22,2865.41,Young Active
+2171,Nina O.,22,Male,Los Angeles,2023-06-05,2499.11,Young Active
+2172,Sam P.,32,Female,Los Angeles,2023-05-19,2605.38,VIP
+2173,Paul Q.,25,Female,Phoenix,2023-02-07,1652.81,Young Active
+2174,Tina R.,36,Female,Philadelphia,2023-11-05,727.66,Occasional
+2175,Diana S.,23,Male,San Antonio,2023-10-03,2548.57,Young Active
+2176,Jack T.,61,Female,Chicago,2022-11-30,529.14,Occasional
+2177,Leo U.,24,Female,Houston,2022-02-16,1767.93,Young Active
+2178,Sam V.,29,Male,Houston,2022-03-25,146.1,Occasional
+2179,Leo W.,67,Female,New York,2022-01-18,,Loyal Saver
+2180,Rita X.,30,Female,Philadelphia,2023-02-19,4390.02,VIP
+2181,Mona Y.,20,Female,San Diego,2022-09-16,238.5,Occasional
+2182,Charlie Z.,48,Female,Chicago,2022-09-11,5382.81,VIP
+2183,Grace A.,58,Male,Chicago,2022-04-20,2248.94,Loyal Saver
+2184,Leo B.,67,Male,New York,2022-03-11,2752.96,Loyal Saver
+2185,Eva C.,47,Female,Philadelphia,2023-08-07,360.96,Occasional
+2186,Mona D.,25,Female,Philadelphia,2023-04-13,1546.41,Young Active
+2187,Ivy E.,61,Male,Philadelphia,2023-10-30,1946.83,Loyal Saver
+2188,Nina F.,27,Female,Houston,2023-03-02,2758.57,Young Active
+2189,Henry G.,26,Female,San Antonio,2023-07-23,3462.73,Young Active
+2190,Paul H.,38,Male,Houston,2022-09-22,31.36,Occasional
+2191,Nina I.,43,Male,Houston,2022-03-02,4344.41,VIP
+2192,Karen J.,48,Female,Houston,2022-02-11,4135.93,Loyal Saver
+2193,Henry K.,54,Female,Philadelphia,2023-07-02,2617.99,Loyal Saver
+2194,Bob L.,18,Female,San Diego,2023-02-17,1844.42,Young Active
+2195,Nina M.,34,Male,New York,2022-07-15,435.51,Occasional
+2196,Paul N.,30,Male,Phoenix,2022-11-08,506.64,Occasional
+2197,Henry O.,29,Male,New York,2023-07-29,2749.08,Young Active
+2198,Grace P.,54,Female,New York,2023-06-09,3423.07,Loyal Saver
+2199,Alice Q.,47,Male,Phoenix,2023-08-09,2630.17,Loyal Saver
+2200,Frank R.,68,Male,Phoenix,2022-05-15,1885.75,Loyal Saver
+2201,Eva S.,20,Male,Philadelphia,2023-10-19,2333.51,Young Active
+2202,Grace T.,38,Male,Chicago,2022-06-17,4802.46,VIP
+2203,Diana U.,49,Female,San Antonio,2022-04-17,578.61,Occasional
+2204,Karen V.,48,Female,San Antonio,2023-02-06,3464.87,Loyal Saver
+2205,Sam W.,22,Male,Los Angeles,2023-07-22,2021.47,Young Active
+2206,Leo X.,38,Female,San Diego,2022-01-24,3872.94,VIP
+2207,Sam Y.,54,Female,New York,2023-10-24,3967.03,VIP
+2208,Jack Z.,19,Female,Los Angeles,2023-07-01,2441.86,Young Active
+2209,Sam A.,46,Female,Chicago,2022-09-30,3414.67,VIP
+2210,Oscar B.,56,Male,San Diego,2023-05-06,840.15,Occasional
+2211,Henry C.,27,Female,Houston,2023-05-29,3122.43,Young Active
+2212,Alice D.,18,Female,Los Angeles,2023-08-22,2249.19,Young Active
+2213,Henry E.,21,Male,Chicago,2023-07-18,2533.23,Young Active
+2214,Leo F.,44,Male,San Antonio,2022-05-30,86.34,Occasional
+2215,Rita G.,26,Male,Phoenix,2022-02-25,2436.73,Young Active
+2216,Quinn H.,41,Female,Phoenix,2023-06-16,305.38,Occasional
+2217,Quinn I.,58,Male,Los Angeles,2022-10-04,113.83,Occasional
+2218,Ivy J.,19,Female,New York,2023-03-02,1993.05,Young Active
+2219,Bob K.,26,Male,Phoenix,2023-08-24,2486.78,Young Active
+2220,Rita L.,63,Male,San Diego,2022-01-09,3258.74,Loyal Saver
+2221,Grace M.,22,Female,New York,2023-08-07,2397.78,Young Active
+2222,Oscar N.,22,Female,Philadelphia,2022-03-18,1259.83,Young Active
+2223,Mona O.,34,Female,Phoenix,2023-09-18,2670.7,VIP
+2224,Oscar P.,56,Female,San Antonio,2022-12-05,193.25,Occasional
+2225,Diana Q.,58,Male,New York,2023-09-02,586.03,Occasional
+2226,Grace R.,22,Female,Philadelphia,2023-11-08,470.94,Occasional
+2227,Rita S.,39,Male,Houston,2022-06-19,1299.42,Loyal Saver
+2228,Paul T.,27,Female,San Antonio,2022-07-13,76.3,Occasional
+2229,Bob U.,36,Male,Philadelphia,2023-01-27,1753.92,Loyal Saver
+2230,Charlie V.,18,Female,Phoenix,2022-01-25,2218.23,Young Active
+2231,Quinn W.,43,Male,Houston,2023-08-28,4123.06,Loyal Saver
+2232,Charlie X.,25,Male,Philadelphia,2023-01-06,2407.3,Young Active
+2233,Bob Y.,20,Male,New York,2023-04-30,,Young Active
+2234,Karen Z.,24,Female,New York,2022-09-14,,Young Active
+2235,Rita A.,57,Male,Chicago,2023-03-17,627.21,Occasional
+2236,Nina B.,23,Male,Houston,2023-05-03,2577.48,Young Active
+2237,Karen C.,37,Male,Chicago,2022-12-17,152.21,Occasional
+2238,Mona D.,52,Female,San Diego,2022-04-05,3364.07,VIP
+2239,Alice E.,25,Male,Chicago,2022-06-17,1389.9,Young Active
+2240,Eva F.,23,Male,San Diego,2022-12-31,219.86,Occasional
+2241,Jack G.,41,Female,Chicago,2022-03-18,1932.81,Loyal Saver
+2242,Oscar H.,60,Male,Philadelphia,2023-08-03,4005.5,Loyal Saver
+2243,Mona I.,66,Female,Los Angeles,2022-03-02,,Loyal Saver
+2244,Leo J.,59,Female,Chicago,2022-06-06,412.02,Occasional
+2245,Sam K.,36,Male,Los Angeles,2022-06-24,2420.4,VIP
+2246,Jack L.,52,Female,Los Angeles,2023-03-27,2286.38,Loyal Saver
+2247,Sam M.,53,Male,New York,2022-09-25,1022.31,Occasional
+2248,Leo N.,54,Female,Chicago,2023-02-20,1971.95,Loyal Saver
+2249,Grace O.,36,Female,Los Angeles,2022-09-19,1454.4,Loyal Saver
+2250,Frank P.,65,Female,Houston,2023-07-31,3650.16,Loyal Saver
+2251,Diana Q.,40,Male,Los Angeles,2022-07-17,79.23,Occasional
+2252,Tina R.,26,Female,Phoenix,2022-05-13,227.21,Occasional
+2253,Frank S.,62,Male,San Antonio,2022-03-16,2593.29,Loyal Saver
+2254,Rita T.,49,Male,New York,2022-09-03,121.59,Occasional
+2255,Leo U.,31,Male,New York,2023-08-27,703.51,Occasional
+2256,Bob V.,18,Female,Chicago,2023-03-21,1680.68,Young Active
+2257,Alice W.,52,Female,San Diego,2022-12-10,3131.93,Loyal Saver
+2258,Nina X.,19,Female,San Diego,2022-12-26,2171.97,Young Active
+2259,Henry Y.,23,Male,Philadelphia,2022-06-05,2450.08,Young Active
+2260,Mona Z.,43,Female,San Diego,2023-05-27,3522.29,VIP
+2261,Bob A.,21,Male,New York,2022-10-05,3034.65,Young Active
+2262,Paul B.,49,Male,Philadelphia,2022-09-05,3884.02,Loyal Saver
+2263,Nina C.,54,Female,New York,2022-01-24,3861.15,VIP
+2264,Jack D.,28,Male,Los Angeles,2023-06-07,1729.7,Young Active
+2265,Jack E.,68,Male,Phoenix,2023-01-30,2018.61,Loyal Saver
+2266,Tina F.,18,Female,Philadelphia,2023-05-13,1747.15,Young Active
+2267,Karen G.,27,Male,Chicago,2022-07-10,3330.97,Young Active
+2268,Bob H.,19,Female,San Diego,2023-05-15,2115.53,Young Active
+2269,Charlie I.,31,Male,San Diego,2023-05-14,300.4,Occasional
+2270,Charlie J.,60,Female,New York,2023-07-16,1217.46,Occasional
+2271,Rita K.,60,Male,Houston,2023-10-16,2659.69,Loyal Saver
+2272,Grace L.,67,Male,Philadelphia,2022-01-17,2494.45,Loyal Saver
+2273,Nina M.,41,Male,Philadelphia,2023-09-25,2489.51,Loyal Saver
+2274,Rita N.,36,Female,Phoenix,2022-01-22,4506.14,Loyal Saver
+2275,Sam O.,28,Male,Philadelphia,2023-02-26,1267.95,Young Active
+2276,Grace P.,29,Male,Los Angeles,2022-09-28,2030.75,Young Active
+2277,Grace Q.,36,Female,New York,2022-09-24,2135.97,Loyal Saver
+2278,Paul R.,29,Female,Phoenix,2022-09-24,2788.56,Young Active
+2279,Charlie S.,26,Female,New York,2022-06-29,1882.07,Young Active
+2280,Karen T.,64,Male,New York,2023-03-23,1638.92,Loyal Saver
+2281,Eva U.,60,Female,Philadelphia,2023-08-14,1263.58,Loyal Saver
+2282,Ivy V.,32,Male,Chicago,2022-05-20,948.81,Occasional
+2283,Diana W.,39,Male,Chicago,2022-11-10,57.85,Occasional
+2284,Paul X.,33,Male,Chicago,2022-06-08,2400.37,VIP
+2285,Tina Y.,19,Female,Chicago,2023-06-19,2787.8,Young Active
+2286,Tina Z.,33,Female,Los Angeles,2022-12-26,2817.7,VIP
+2287,Charlie A.,24,Female,Houston,2022-05-23,1129.63,Young Active
+2288,Quinn B.,26,Male,Los Angeles,2023-06-12,1713.07,Young Active
+2289,Mona C.,27,Male,Houston,2023-05-28,732.52,Occasional
+2290,Karen D.,18,Male,Phoenix,2023-09-22,1961.37,Young Active
+2291,Grace E.,39,Female,San Diego,2022-07-05,2942.8,VIP
+2292,Rita F.,41,Male,San Antonio,2023-03-17,3061.24,VIP
+2293,Tina G.,55,Male,Philadelphia,2022-03-19,3106.74,Loyal Saver
+2294,Diana H.,29,Male,New York,2023-06-21,191.31,Occasional
+2295,Tina I.,34,Female,Los Angeles,2023-06-09,3759.78,VIP
+2296,Mona J.,27,Male,San Antonio,2022-05-21,1146.24,Young Active
+2297,Mona K.,54,Male,Chicago,2023-08-31,2048.98,Loyal Saver
+2298,Alice L.,50,Male,Phoenix,2021-12-17,258.9,Occasional
+2299,Karen M.,20,Male,Los Angeles,2022-11-28,1598.83,Young Active
+2300,Quinn N.,41,Male,San Antonio,2023-05-16,3915.67,VIP
+2301,Tina O.,39,Female,Chicago,2022-04-17,3267.03,VIP
+2302,Karen P.,27,Female,San Diego,2022-09-20,2303.21,Young Active
+2303,Henry Q.,22,Male,San Antonio,2022-05-25,1783.77,Young Active
+2304,Rita R.,21,Male,San Antonio,2022-03-11,1869.72,Young Active
+2305,Quinn S.,18,Female,New York,2022-08-25,2114.32,Young Active
+2306,Henry T.,60,Female,Chicago,2023-06-13,2889.03,Loyal Saver
+2307,Mona U.,19,Female,Houston,2023-04-04,2196.54,Young Active
+2308,Jack V.,52,Male,Phoenix,2022-06-03,650.34,Occasional
+2309,Oscar W.,58,Male,Phoenix,2023-08-01,2476.78,Loyal Saver
+2310,Mona X.,30,Male,San Diego,2023-06-23,248.95,Occasional
+2311,Henry Y.,38,Female,Houston,2023-04-21,585.77,Occasional
+2312,Frank Z.,39,Male,San Antonio,2022-07-26,2319.17,VIP
+2313,Ivy A.,48,Male,San Antonio,2022-09-08,6513.27,VIP
+2314,Henry B.,66,Male,Philadelphia,2023-06-13,2434.25,Loyal Saver
+2315,Grace C.,60,Female,San Antonio,2023-02-22,2663.61,Loyal Saver
+2316,Grace D.,27,Male,San Antonio,2022-04-05,3328.63,Young Active
+2317,Karen E.,43,Female,Phoenix,2022-09-25,180.7,Occasional
+2318,Diana F.,29,Female,San Diego,2023-08-04,59.58,Occasional
+2319,Jack G.,46,Female,Houston,2023-07-22,380.94,Occasional
+2320,Oscar H.,48,Male,Los Angeles,2022-11-18,504.49,Occasional
+2321,Rita I.,29,Male,Houston,2023-06-23,1181.41,Young Active
+2322,Rita J.,25,Male,Chicago,2022-06-20,1922.32,Young Active
+2323,Quinn K.,26,Male,Phoenix,2022-11-15,2313.25,Young Active
+2324,Tina L.,52,Female,San Diego,2023-09-22,483.61,Occasional
+2325,Paul M.,66,Male,New York,2023-07-12,2199.66,Loyal Saver
+2326,Alice N.,18,Female,New York,2023-11-06,1604.8,Young Active
+2327,Ivy O.,24,Male,Philadelphia,2022-05-10,1705.7,Young Active
+2328,Leo P.,20,Female,Houston,2022-09-15,1603.45,Young Active
+2329,Quinn Q.,43,Male,San Antonio,2022-01-20,462.62,Occasional
+2330,Grace R.,23,Male,Los Angeles,2022-08-19,52.42,Occasional
+2331,Paul S.,31,Female,Chicago,2022-03-11,117.14,Occasional
+2332,Bob T.,61,Male,San Antonio,2022-10-02,1632.64,Loyal Saver
+2333,Quinn U.,39,Female,Philadelphia,2022-10-18,4689.48,VIP
+2334,Grace V.,41,Female,Philadelphia,2023-09-08,3339.33,VIP
+2335,Mona W.,41,Male,New York,2023-08-14,4562.7,VIP
+2336,Eva X.,38,Female,Philadelphia,2021-12-15,3519.03,VIP
+2337,Diana Y.,38,Male,New York,2022-05-20,1516.81,Loyal Saver
+2338,Sam Z.,20,Male,San Antonio,2022-05-09,2212.17,Young Active
+2339,Mona A.,23,Female,San Antonio,2022-08-16,2828.77,Young Active
+2340,Tina B.,31,Male,San Diego,2022-10-13,3736.25,VIP
+2341,Leo C.,20,Female,Houston,2022-06-26,1980.47,Young Active
+2342,Nina D.,20,Male,Philadelphia,2022-09-01,2952.15,Young Active
+2343,Mona E.,26,Female,San Diego,2022-10-24,60.22,Occasional
+2344,Oscar F.,59,Male,Houston,2023-09-05,223.7,Occasional
+2345,Charlie G.,36,Male,Chicago,2022-11-13,312.02,Occasional
+2346,Oscar H.,21,Male,New York,2023-10-15,3326.02,Young Active
+2347,Mona I.,24,Male,San Antonio,2023-06-06,2277.96,Young Active
+2348,Jack J.,42,Female,San Diego,2023-08-18,4990.26,VIP
+2349,Diana K.,50,Female,New York,2023-03-24,244.34,Occasional
+2350,Nina L.,27,Male,San Antonio,2022-04-29,2608.37,Young Active
+2351,Ivy M.,28,Female,Chicago,2022-06-05,2549.47,Young Active
+2352,Nina N.,48,Male,Houston,2023-08-10,2365.66,Loyal Saver
+2353,Rita O.,20,Female,San Antonio,2022-10-25,1804.79,Young Active
+2354,Alice P.,33,Male,San Diego,2022-11-30,255.36,Occasional
+2355,Paul Q.,47,Female,San Antonio,2023-08-01,4448.91,VIP
+2356,Rita R.,23,Female,Los Angeles,2022-09-05,2221.97,Young Active
+2357,Rita S.,45,Male,San Diego,2023-02-13,2807.19,VIP
+2358,Charlie T.,27,Male,Phoenix,2023-02-02,1072.53,Young Active
+2359,Jack U.,69,Male,Philadelphia,2023-11-12,2215.62,Loyal Saver
+2360,Bob V.,21,Male,San Antonio,2022-11-30,2345.31,Young Active
+2361,Mona W.,62,Male,Phoenix,2022-05-05,309.67,Occasional
+2362,Henry X.,21,Female,San Diego,2023-04-21,1079.09,Young Active
+2363,Bob Y.,21,Female,San Diego,2023-03-25,1304.46,Young Active
+2364,Mona Z.,24,Male,San Antonio,2022-06-23,1726.06,Young Active
+2365,Leo A.,35,Male,Philadelphia,2023-09-30,2955.5,Loyal Saver
+2366,Diana B.,49,Male,Chicago,2023-09-06,168.42,Occasional
+2367,Alice C.,42,Male,Phoenix,2022-09-09,3426.72,Loyal Saver
+2368,Bob D.,58,Male,San Antonio,2022-02-17,3578.27,Loyal Saver
+2369,Sam E.,31,Female,San Antonio,2022-06-12,778.14,Occasional
+2370,Diana F.,30,Female,Philadelphia,2023-04-09,6289.98,VIP
+2371,Grace G.,52,Female,Philadelphia,2023-06-17,4475.1,VIP
+2372,Alice H.,41,Female,San Diego,2023-08-22,2905.29,VIP
+2373,Diana I.,38,Male,Philadelphia,2022-05-17,1598.57,VIP
+2374,Grace J.,19,Female,Philadelphia,2022-04-28,1611.75,Young Active
+2375,Paul K.,39,Female,New York,2023-01-12,4463.36,VIP
+2376,Charlie L.,22,Male,Chicago,2023-05-24,146.89,Occasional
+2377,Eva M.,48,Male,Philadelphia,2023-06-30,4148.16,Loyal Saver
+2378,Bob N.,43,Female,Los Angeles,2023-10-24,5461.19,VIP
+2379,Frank O.,61,Male,Houston,2021-12-26,1056.15,Loyal Saver
+2380,Leo P.,20,Male,Los Angeles,2023-03-23,257.28,Occasional
+2381,Henry Q.,30,Female,Chicago,2023-08-14,6003.66,VIP
+2382,Eva R.,19,Male,Los Angeles,2023-05-19,1017.74,Young Active
+2383,Alice S.,23,Male,Houston,2023-07-30,2745.63,Young Active
+2384,Leo T.,58,Male,Los Angeles,2022-11-02,3927.29,Loyal Saver
+2385,Karen U.,24,Male,San Diego,2022-03-24,1679.41,Young Active
+2386,Eva V.,63,Female,San Antonio,2023-02-22,2445.18,Loyal Saver
+2387,Rita W.,37,Male,San Antonio,2023-10-20,364.2,Occasional
+2388,Rita X.,43,Female,Philadelphia,2023-02-12,550.38,Occasional
+2389,Ivy Y.,40,Female,Philadelphia,2022-12-20,2889.04,Loyal Saver
+2390,Grace Z.,47,Female,San Antonio,2023-11-12,1067.0,Loyal Saver
+2391,Nina A.,41,Male,Los Angeles,2023-03-24,2507.08,Loyal Saver
+2392,Tina B.,46,Male,San Antonio,2022-04-03,463.24,Occasional
+2393,Grace C.,39,Female,Los Angeles,2022-01-13,120.26,Occasional
+2394,Sam D.,48,Female,Houston,2023-09-15,1752.08,Loyal Saver
+2395,Mona E.,53,Male,Philadelphia,2022-10-06,29.87,Occasional
+2396,Diana F.,59,Female,New York,2023-05-28,2573.67,Loyal Saver
+2397,Rita G.,51,Male,Los Angeles,2023-04-27,1664.31,Loyal Saver
+2398,Quinn H.,29,Male,New York,2023-04-24,212.14,Occasional
+2399,Paul I.,69,Male,Los Angeles,2022-06-28,2064.78,Loyal Saver
+2400,Charlie J.,53,Male,Chicago,2023-02-07,1364.05,Loyal Saver
