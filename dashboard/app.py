@@ -7,7 +7,6 @@ import base64
 from pathlib import Path
 from datetime import datetime, timedelta
 
-
 ICONS = {
     "logo": '<svg viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="3" width="8" height="5" rx="1.5"/><rect x="13" y="10" width="8" height="11" rx="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5"/></svg>',
     "revenue": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9.3 9.3c0-1.4 1.2-2 2.7-2s2.7.7 2.7 2-1.2 1.7-2.7 2c-1.5.3-2.7.8-2.7 2.2s1.2 2 2.7 2 2.7-.6 2.7-2"/></svg>',
@@ -235,52 +234,37 @@ CSS_THEME = """
         color: #F8F4FF;
     }
  
-    /* Onglets — style "segmented control", aligné sur la grille des 4 cartes KPI */
-    .stTabs [data-baseweb="tab-list"] {
-        gap: 1rem;
-        background-color: transparent;
-        border: none;
-        border-radius: 12px;
-        padding: 0;
-        display: grid !important;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        align-items: stretch;
-        width: 100%;
-    }
-    .stTabs [data-baseweb="tab"] {
+    /* Navigation par boutons (remplace st.tabs) — même st.columns(4) que les cartes KPI,
+       donc alignement garanti. Texte toujours noir, cliqué ou non. */
+    div[data-testid="stButton"] button {
         height: 40px;
         border-radius: 8px;
-        color: #000000 !important;
         font-weight: 900;
-        font-size: 1rem;
+        font-size: 0.95rem;
         border: 1px solid transparent;
         background: var(--bg-card);
-        min-width: 0;
+        color: #000000 !important;
         width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         white-space: nowrap;
-        padding: 0 10px;
     }
-    .stTabs [data-baseweb="tab"]:hover {
+    div[data-testid="stButton"] button:hover {
+        color: #000000 !important;
+        border-color: #000000;
+    }
+    div[data-testid="stButton"] button:focus {
+        color: #000000 !important;
+        box-shadow: none;
+    }
+    div[data-testid="stButton"] button p,
+    div[data-testid="stButton"] button span,
+    div[data-testid="stButton"] button div {
         color: #000000 !important;
     }
-    .stTabs [data-baseweb="tab"] p {
-        color: #000000 !important;
-    }
-    .stTabs [aria-selected="true"] {
+    div[data-testid="stButton"] button[kind="primary"] {
         background: linear-gradient(135deg, #EAEEB8 0%, #EAEEB8 100%) !important;
-        color: #000000 !important;
         box-shadow: var(--shadow-sm);
-        border-radius: 8px;
-        border: 1px solid transparent;
+        border-color: #000000;
     }
-    .stTabs [aria-selected="true"] p {
-        color: #000000 !important;
-    }
-    .stTabs [data-baseweb="tab-highlight"] { display: none; }
-    .stTabs [data-baseweb="tab-border"] { display: none; }
  
     /* Cartes de contenu (autour des graphiques) */
     .content-card {
@@ -584,6 +568,8 @@ except FileNotFoundError as e:
 
 
 
+
+
 # 4. SIDEBAR & LANGUAGE TOGGLE
 
 with st.sidebar:
@@ -644,6 +630,7 @@ st.markdown(f"""
 """, unsafe_allow_html=True)
 
 # Bandeau informatif : signale les valeurs provisoires (segmentation/churn/ROI)
+# tant que les livrables réels de M3/M4/M5/M6 ne sont pas encore branchés.
 notice_keys = {'segmentation': 'notice_segmentation', 'churn': 'notice_churn', 'roi': 'notice_roi', 'sales': 'sales_pending'}
 active_notices = [t[notice_keys[n]] for n in demo_notes if n in notice_keys]
 if active_notices:
@@ -705,11 +692,24 @@ st.markdown("<br>", unsafe_allow_html=True)
 
 # 6. TABS CONTENT
 
-tab1, tab2, tab3, tab4 = st.tabs([t['tab1'], t['tab2'], t['tab3'], t['tab4']])
+if 'active_tab' not in st.session_state:
+    st.session_state.active_tab = 1
+
+nav_col1, nav_col2, nav_col3, nav_col4 = st.columns(4)
+nav_cols = {1: nav_col1, 2: nav_col2, 3: nav_col3, 4: nav_col4}
+for i, label_key in enumerate(['tab1', 'tab2', 'tab3', 'tab4'], start=1):
+    with nav_cols[i]:
+        if st.button(
+            t[label_key], key=f"navtab_{i}", use_container_width=True,
+            type="primary" if st.session_state.active_tab == i else "secondary"
+        ):
+            st.session_state.active_tab = i
+
+active_tab = st.session_state.active_tab
 
 # TAB 2: MARKETING CAMPAIGNS (M5)
 
-with tab2:
+if active_tab == 2:
     col_c, col_d = st.columns([1, 1])
 
     with col_c:
@@ -753,10 +753,9 @@ with tab2:
     section_title(t['campaign_table'], 'tab_campaigns')
     st.dataframe(filtered_mkt[['campaign', 'channel', 'impressions', 'clicks', 'conversions', 'taux_conversion', 'spend', 'revenue', 'roi', 'cpc', 'cpa']], use_container_width=True)
 
-
 # TAB 1: SALES & PERFORMANCE (M2)
 
-with tab1:
+if active_tab == 1:
     col_t1, col_t2 = st.columns(2)
     n_transactions = int(filtered_cust['frequency'].sum()) if 'frequency' in filtered_cust.columns else 0
     avg_per_client = filtered_cust['total_spent'].mean() if len(filtered_cust) else 0
@@ -791,7 +790,7 @@ with tab1:
 
 # TAB 3: CUSTOMER SEGMENTATION (M3/M4)
 
-with tab3:
+if active_tab == 3:
     col_e, col_f = st.columns([1.5, 1])
     
     with col_e:
@@ -822,7 +821,7 @@ with tab3:
 
 # TAB 4: PREDICTIVE AI & CHURN RISK (M6/M7)
 
-with tab4:
+if active_tab == 4:
     col_g, col_h = st.columns([1, 1])
     
     with col_g:
