@@ -1,0 +1,6 @@
+Customer_ID,Name,Churn_Probability_Final,CLV,CLV_Score,Retention_Priority,Retention_Priority_Level,Marketing_Action
+2001,Alice,0.07808684682890332,819.0944881889764,100.0,7.808684682890332,Priorité faible,Suivi marketing standard
+2002,Bob,0.06855855749540757,376.72018348623857,45.99227426364076,3.153163979448369,Priorité faible,Suivi marketing standard
+2003,Charlie,0.14491991403142784,718.0327868852457,87.66177739430542,12.703937243824905,Priorité faible,Suivi marketing standard
+2004,Diana,0.07741909972620098,670.408163265306,81.84747583243823,6.33655789380936,Priorité faible,Suivi marketing standard
+2005,Eva,0.8710495945764458,0.0,0.0,0.0,Priorité faible,Suivi marketing standard
