@@ -9,3 +9,4 @@ Thumbs.db
 .idea/
 .streamlit/secrets.toml
 notebooks/src/__pycache__/
+.env
