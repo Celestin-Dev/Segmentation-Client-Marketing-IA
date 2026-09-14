@@ -1,0 +1,5 @@
+Segment,Nb_Clients,Total_Spent_Moyen (EUR),Profil,Canal_Recommande,Justification
+0,114,353.55,Cluster officiel issu de la segmentation clients (profil metier non fourni dans le dataset),Online,Canal avec le meilleur ROI (%) observe (1325.0) parmi les campagnes analysees
+1,66,4131.06,Cluster officiel issu de la segmentation clients (profil metier non fourni dans le dataset),Online,Canal avec le meilleur ROI (%) observe (1325.0) parmi les campagnes analysees
+2,80,2556.17,Cluster officiel issu de la segmentation clients (profil metier non fourni dans le dataset),Online,Canal avec le meilleur ROI (%) observe (1325.0) parmi les campagnes analysees
+3,140,2138.29,Cluster officiel issu de la segmentation clients (profil metier non fourni dans le dataset),Online,Canal avec le meilleur ROI (%) observe (1325.0) parmi les campagnes analysees
