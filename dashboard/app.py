@@ -20,7 +20,7 @@ ICONS = {
     "download": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"/><path d="M7 11l5 5 5-5"/><path d="M4 20h16"/></svg>',
 }
 
-def svg_icon(name, size=20, color="#6ECFF6"):
+def svg_icon(name, size=20, color="#2E5C9A"):
 
     return f'<span style="display:inline-flex;color:{color};width:{size}px;height:{size}px;vertical-align:middle;">{ICONS[name]}</span>'
 
@@ -95,8 +95,8 @@ st.set_page_config(
 CSS_THEME = """
 <style>
     :root {
-        --bg-page: #EAEEB8;
-        --bg-card: #EAEEB8;
+        --bg-page: #EEF0F4;
+        --bg-card: #FFFFFF;
         --border-color: transparent;
         --accent: #8B5CF6;
         --accent-soft: rgba(139, 92, 246, 0.14);
@@ -116,13 +116,22 @@ CSS_THEME = """
         font-family: 'Inter', 'Segoe UI', sans-serif;
     }
     h1, h2, h3, h4, .stMarkdown p { font-family: 'Inter', 'Segoe UI', sans-serif; }
+
+    header[data-testid="stHeader"] {
+    background: transparent;
+    box-shadow: none;
+    }
+    div[data-testid="stToolbar"] {
+        right: 1rem;
+    }
+
  
     /* Réduit l'espace mort en haut de page */
     .block-container { padding-top: 1.6rem; padding-bottom: 2rem; }
  
     /* Sidebar */
     section[data-testid="stSidebar"] {
-        background: linear-gradient(180deg, #230B62 0%, #14091E 100%) !important;
+        background: #230B62 !important;
         border-right: 1px solid transparent;
     }
     section[data-testid="stSidebar"] .block-container { padding-top: 1.6rem; }
@@ -145,6 +154,59 @@ CSS_THEME = """
         background: rgba(139, 92, 246, 0.08);
         border-radius: 16px;
     }
+
+    /* État normal */
+    section[data-testid="stSidebar"] div[data-testid="stButton"] button {
+        background: rgba(255, 255, 255, 0.01) !important;
+        color: #E9E7FF !important;
+        font-weight: 600 !important;
+        border-radius: 8px !important;
+        box-shadow: none !important;
+        transition: background 0.15s ease, border-color 0.15s ease;
+    }
+    section[data-testid="stSidebar"] div[data-testid="stButton"] button p,
+    section[data-testid="stSidebar"] div[data-testid="stButton"] button span,
+    section[data-testid="stSidebar"] div[data-testid="stButton"] button div {
+        color: #E9E7FF !important;
+    }
+
+    /* État survol (hover) */
+    section[data-testid="stSidebar"] div[data-testid="stButton"] button:hover {
+        background: rgba(255, 255, 255, 0.14) !important;
+        border-color: rgba(255, 255, 255, 0.14) !important;
+    }
+    section[data-testid="stSidebar"] div[data-testid="stButton"] button:hover span {
+    section[data-testid="stSidebar"] div[data-testid="stButton"] button:hover p,
+        color: #FFFFFF !important;
+    }
+
+    /* Neutralise le contour rouge par défaut de Streamlit au clic/focus */
+    section[data-testid="stSidebar"] div[data-testid="stButton"] button:focus,
+    section[data-testid="stSidebar"] div[data-testid="stButton"] button:active {
+        box-shadow: none !important;
+        outline: none !important;
+        border-color: none !important;
+    }
+
+    /* État sélectionné (onglet actif, kind="primary") */
+    section[data-testid="stSidebar"] div[data-testid="stButton"] button[kind="primary"] {
+        background: #4F46E5 !important;
+        border: 1px solid #4F46E5 !important;
+        box-shadow: 0 2px 8px rgba(79, 70, 229, 0.4) !important;
+    }
+    section[data-testid="stSidebar"] div[data-testid="stButton"] button[kind="primary"] p,
+    section[data-testid="stSidebar"] div[data-testid="stButton"] button[kind="primary"] span {
+        color: #FFFFFF !important;
+    }
+    section[data-testid="stSidebar"] div[data-testid="stButton"] button[kind="primary"]:hover {
+        background: #6259EA !important;
+        border-color: #6259EA !important;
+    }
+    section[data-testid="stSidebar"] div[data-testid="stButton"] button {
+        justify-content: flex-start !important;
+        text-align: left !important;
+        padding-left: 1rem !important;
+    }
  
     /* Étiquette "eyebrow" au-dessus des titres de filtre */
     .filter-label {
@@ -158,7 +220,7 @@ CSS_THEME = """
  
     /* En-tête principal */
     .header-bar {
-        background: linear-gradient(135deg, #230B62 0%, #14111C 100%);
+        background: #230B62;
         border: 1px solid transparent;
         border-radius: 14px;
         padding: 1.5rem 1.8rem;
@@ -192,18 +254,20 @@ CSS_THEME = """
  
     /* Cartes KPI */
     .kpi-card {
-        background: linear-gradient(160deg, #230B62 0%, #14111C 100%);
-        border: 1px solid transparent;
-        border-radius: 14px;
+        background: #FFFFFF;
+        border: 1px solid #E2E8F0;
+        border-left: 4px solid #2E5C9A;
+        border-radius: 10px;
         padding: 1.3rem 1.3rem 1.15rem 1.3rem;
         margin-bottom: 1rem;
-        box-shadow: var(--shadow-sm);
+        box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
         transition: box-shadow 0.15s ease, transform 0.15s ease;
     }
     .kpi-card:hover {
-        box-shadow: var(--shadow-md);
+        box-shadow: 0 4px 10px rgba(15, 23, 42, 0.10);
         transform: translateY(-1px);
     }
+
     .kpi-icon-wrap {
         width: 38px;
         height: 38px;
@@ -212,26 +276,30 @@ CSS_THEME = """
         align-items: center;
         justify-content: center;
         margin-bottom: 0.85rem;
+        background: #EFF4FA;
     }
     .kpi-icon-wrap.warning { }
+    .kpi-card.warning-card {
+        border-left-color: #C0623D;
+    }
     .kpi-title {
         font-size: 0.74rem;
         font-weight: 700;
-        color: #F8F4FF;
+        color: #64748B;
         text-transform: uppercase;
         letter-spacing: 0.06em;
     }
     .kpi-value {
         font-size: 1.9rem;
         font-weight: 800;
-        color: #F8F4FF;
+        color: #0F172A;
         margin: 0.3rem 0 0.15rem 0;
         letter-spacing: -0.02em;
     }
     .kpi-sub {
         font-size: 0.78rem;
         font-weight: 600;
-        color: #F8F4FF;
+        color: #2E5C9A;
     }
  
     /* Navigation par boutons (remplace st.tabs) — même st.columns(4) que les cartes KPI,
@@ -261,14 +329,14 @@ CSS_THEME = """
         color: #000000 !important;
     }
     div[data-testid="stButton"] button[kind="primary"] {
-        background: linear-gradient(135deg, #EAEEB8 0%, #EAEEB8 100%) !important;
+        background: #EAEEB8 !important;
         box-shadow: var(--shadow-sm);
         border-color: #000000;
     }
  
     /* Cartes de contenu (autour des graphiques) */
     .content-card {
-        background: linear-gradient(160deg, #230B62 0%, #14111C 100%);
+        background: #230B62;
         border: 1px solid transparent;
         border-radius: 14px;
         padding: 1.2rem 1.3rem 0.6rem 1.3rem;
@@ -329,12 +397,17 @@ CSS_THEME = """
         border-radius: 8px !important;
         border-color: transparent !important;
     }
-    .stDataFrame { border: 1px solid transparent; border-radius: 12px; overflow: hidden; }
-    div[data-testid="stDataFrame"] {
-        background-color: #000000 !important;
-        color: #FFFFFF !important;
-        border-radius: 12px;
+    .stDataFrame {
+        border: none !important;
+        border-radius: 0 !important;
+        overflow: hidden;
     }
+    div[data-testid="stDataFrame"] {
+       border: none !important;
+       outline: none !important;
+       box-shadow: none !important;
+       border-radius: 0 !important;
+    }   
     div[data-testid="stDataFrame"] .dataframe {
         background-color: #000000 !important;
         color: #FFFFFF !important;
@@ -366,41 +439,41 @@ TEXTS = {
         'lang_selector': "Langue / Language",
         'sidebar_filters': "Filtres d'Analyse",
         'date_range': "Période d'analyse",
-        'segment_filter': "Segment Client (M3)",
-        'product_filter': "Catégorie Produit (M2)",
-        'channel_filter': "Canal Marketing (M5)",
+        'segment_filter': "Segment Client",
+        'product_filter': "Catégorie Produit",
+        'channel_filter': "Canal Marketing",
         'all': "Tous",
-        'tab1': "1. Ventes & Performance (M2)",
-        'tab2': "2. Campagnes Marketing (M5)",
-        'tab3': "3. Segmentation Client (M3/M4)",
-        'tab4': "4. IA Prédictive & Risk Churn (M6/M7)",
+        'tab1': "1. Ventes & Performance",
+        'tab2': "2. Campagnes Marketing",
+        'tab3': "3. Segmentation Client",
+        'tab4': "4. IA Prédictive & Risk Churn",
         'kpi_revenue': "Chiffre d'Affaires Total",
         'kpi_customers': "Clients Actifs",
         'kpi_roi': "ROI Moyen Campagnes",
         'kpi_churn': "Taux de Churn Prédit",
         'kpi_transactions': "Nombre de Transactions",
         'kpi_avg_per_client': "CA Moyen par Client",
-        'sales_pending': "Ventes détaillées (évolution dans le temps, répartition par catégorie) en attente d'un vrai sales_data.csv et products_data.csv — pas encore livrés par l'équipe. Les KPIs ci-dessus utilisent Total_Spent de segments_clients.csv en attendant.",
+        'sales_pending': "Ventes détaillées",
         'feature_importance': "Importance des Variables du Modèle de Churn",
         'feature_importance_pending': "En attente du fichier d'importance des variables (ex. feature_importance.csv) livré par Jean Claude.",
         'budget_vs_conv': "Budget vs Conversions par Campagne",
         'conversion_rate': "Taux de Conversion",
         'sales_trend': "Évolution du Chiffre d'Affaires et Panier Moyen",
         'sales_by_cat': "Répartition des Ventes par Catégorie de Produits",
-        'demo_dist': "Distribution Démographique des Clients (Âge & Genre)",
-        'funnel': "Entonnoir de Conversion des Campagnes (Impressions -> Conversions)",
+        'demo_dist': "Distribution Démographique des Clients",
+        'funnel': "Entonnoir de Conversion des Campagnes",
         'channel_perf': "Comparatif ROI vs CPA/CPC par Canal Marketing",
         'campaign_table': "Détail des Performances par Campagne",
-        'cluster_map': "Cartographie 2D des Clusters Clients (PCA / K-Means)",
+        'cluster_map': "Cartographie 2D des Clusters Clients",
         'cluster_dist': "Répartition de la Clientèle par Segment",
         'persona_details': "Profil & Fiche Persona du Segment Sélectionné",
         'churn_dist': "Distribution de la Probabilité d'Attrition Client",
         'clv_vs_churn': "Matrice Valeur à Vie (CLV) vs Risk Churn",
-        'export_churn': "Exporter la Liste des Clients à Haut Risque de Churn (CSV)",
-        'download_btn': "Télécharger le Fichier CSV",
-        'notice_segmentation': "Segmentation provisoire (par montant dépensé) en attendant segments_clients.csv de Célestin.",
-        'notice_churn': "Scores de churn/CLV provisoires (heuristique simple) en attendant predictions.csv de Jean Claude.",
-        'notice_roi': "ROI estimé à partir du panier moyen des ventes — à remplacer par marketing_kpis.csv de Pascal.",
+        'export_churn': "Exporter la Liste des Clients à Haut Risque",
+        'download_btn': "Télécharger le Fichier",
+        'notice_segmentation': "Segmentation",
+        'notice_churn': "Scores de churn/CLV provisoires",
+        'notice_roi': "ROI estimé à partir du panier moyen des ventes",
     },
     'EN': {
         'title': "Dashboard",
@@ -410,41 +483,41 @@ TEXTS = {
         'lang_selector': "Language / Langue",
         'sidebar_filters': "Analysis Filters",
         'date_range': "Date Range",
-        'segment_filter': "Customer Segment (M3)",
-        'product_filter': "Product Category (M2)",
-        'channel_filter': "Marketing Channel (M5)",
+        'segment_filter': "Customer Segment",
+        'product_filter': "Product Category",
+        'channel_filter': "Marketing Channel",
         'all': "All",
-        'tab1': "1. Sales & Performance (M2)",
-        'tab2': "2. Marketing Campaigns (M5)",
-        'tab3': "3. Customer Segmentation (M3/M4)",
-        'tab4': "4. Predictive AI & Risk Churn (M6/M7)",
+        'tab1': "1. Sales & Performance",
+        'tab2': "2. Marketing Campaigns",
+        'tab3': "3. Customer Segmentation",
+        'tab4': "4. Predictive AI & Risk Churn",
         'kpi_revenue': "Total Revenue",
         'kpi_customers': "Active Customers",
         'kpi_roi': "Average Campaign ROI",
         'kpi_churn': "Predicted Churn Rate",
         'kpi_transactions': "Number of Transactions",
         'kpi_avg_per_client': "Average Revenue per Client",
-        'sales_pending': "Detailed sales (trend over time, breakdown by category) pending a real sales_data.csv and products_data.csv — not yet delivered by the team. The KPIs above use Total_Spent from segments_clients.csv in the meantime.",
+        'sales_pending': "Detailed sales",
         'feature_importance': "Churn Model Feature Importance",
-        'feature_importance_pending': "Waiting for the feature importance file (e.g. feature_importance.csv) from Jean Claude.",
+        'feature_importance_pending': "The feature importance",
         'budget_vs_conv': "Budget vs Conversions by Campaign",
         'conversion_rate': "Conversion Rate",
         'sales_trend': "Revenue Trend & Average Order Value",
         'sales_by_cat': "Sales Breakdown by Product Category",
-        'demo_dist': "Customer Demographics (Age & Gender)",
-        'funnel': "Campaign Conversion Funnel (Impressions -> Conversions)",
+        'demo_dist': "Customer Demographics",
+        'funnel': "Campaign Conversion Funnel",
         'channel_perf': "ROI vs CPA/CPC Comparison by Marketing Channel",
         'campaign_table': "Detailed Campaign Performance Table",
-        'cluster_map': "2D Customer Cluster Mapping (PCA / K-Means)",
+        'cluster_map': "2D Customer Cluster Mapping",
         'cluster_dist': "Customer Distribution by Segment",
         'persona_details': "Persona Profile & Segment Characteristics",
         'churn_dist': "Customer Attrition Probability Distribution",
         'clv_vs_churn': "Customer Lifetime Value (CLV) vs Churn Risk Matrix",
-        'export_churn': "Export High Churn Risk Customer List (CSV)",
+        'export_churn': "Export High Churn Risk Customer",
         'download_btn': "Download CSV File",
-        'notice_segmentation': "Temporary segmentation (based on spend) until Célestin's segments_clients.csv is delivered.",
-        'notice_churn': "Temporary churn/CLV scores (simple heuristic) until Jean Claude's predictions.csv is delivered.",
-        'notice_roi': "ROI estimated from average order value — replace with Pascal's marketing_kpis.csv.",
+        'notice_segmentation': "Segmentation",
+        'notice_churn': "Churn/CLV scores",
+        'notice_roi': "ROI estimated from average order value",
     }
 }
 
@@ -456,18 +529,17 @@ TEXTS = {
 PROJECT_ROOT = Path(__file__).resolve().parent.parent   
 DATA_RAW_DIR = PROJECT_ROOT / "data" / "raw"
 DATA_PROCESSED_DIR = PROJECT_ROOT / "data" / "processed"
-DATA_TEST_DIR = DATA_PROCESSED_DIR / "test"
 MODELS_DIR = PROJECT_ROOT / "models"
 
 SALES_FILE = DATA_RAW_DIR / "sales_data.csv"                         
 PRODUCTS_FILE = DATA_RAW_DIR / "products_data.csv"                    
-SEGMENTS_FILE = DATA_TEST_DIR / "segments_clients.csv"                 
-MARKETING_KPIS_FILE = DATA_TEST_DIR / "marketing_kpis.csv"            
-MARKETING_KPIS_CHANNEL_FILE = DATA_TEST_DIR / "marketing_kpis_by_channel.csv" 
-STRATEGY_FILE = DATA_TEST_DIR / "strategie_segments.csv"               
-PREDICTIONS_FILE = DATA_TEST_DIR / "predictions.csv"                  
-CHURN_MODEL_FILE = DATA_TEST_DIR / "churn_model.pkl"                   
-FEATURE_IMPORTANCE_FILE = DATA_TEST_DIR / "feature_importance.csv"     
+SEGMENTS_FILE = DATA_PROCESSED_DIR / "segments_clients.csv"                 
+MARKETING_KPIS_FILE = DATA_PROCESSED_DIR / "marketing_kpis.csv"            
+MARKETING_KPIS_CHANNEL_FILE = DATA_PROCESSED_DIR / "marketing_kpis_by_channel.csv" 
+STRATEGY_FILE = DATA_PROCESSED_DIR / "strategie_segments.csv"               
+PREDICTIONS_FILE = DATA_PROCESSED_DIR / "predictions.csv"                  
+CHURN_MODEL_FILE = MODELS_DIR / "logistic_churn.pkl"                   
+FEATURE_IMPORTANCE_FILE = DATA_PROCESSED_DIR / "feature_importance.csv"     
 
 
 def _norm_cols(df):
@@ -491,7 +563,25 @@ def load_and_generate_data():
 
     if STRATEGY_FILE.exists():
         strategy_df = _norm_cols(pd.read_csv(STRATEGY_FILE))
+    
+        # Normalisation du nom de la colonne cluster
+        if 'cluster' not in strategy_df.columns:
+            if 'cluster_id' in strategy_df.columns:
+                strategy_df = strategy_df.rename(columns={'cluster_id': 'cluster'})
+            else:
+                raise KeyError(
+                    f"Colonne 'cluster' introuvable dans strategie_segments.csv. "
+                    f"Colonnes disponibles : {strategy_df.columns.tolist()}"
+                )
+    
+        if 'persona' not in strategy_df.columns:
+            raise KeyError(
+                f"Colonne 'persona' introuvable dans strategie_segments.csv. "
+                f"Colonnes disponibles : {strategy_df.columns.tolist()}"
+            )
+    
         persona_map = strategy_df.set_index('cluster')['persona'].to_dict()
+    
         customers_df['cluster'] = customers_df['cluster_id'].map(
             lambda c: f"{c} - {persona_map.get(c, 'Segment ' + str(c))}"
         )
@@ -528,6 +618,19 @@ def load_and_generate_data():
 
     if PREDICTIONS_FILE.exists():
         churn_df = _norm_cols(pd.read_csv(PREDICTIONS_FILE))
+        # colonnes réelles : customer_id, name, churn_probability_final, clv, clv_score,
+        # retention_priority, retention_priority_level, marketing_action
+
+        risk_translation = {
+            'priorité faible': 'Faible/Low',
+            'priorité moyenne': 'Moyen/Medium',
+            'priorité élevée': 'Élevé/High',
+            'priorité très élevée': 'Élevé/High',
+        }
+        churn_df['churn_risk'] = (
+            churn_df['retention_priority_level'].str.strip().str.lower().map(risk_translation)
+        )
+
         predictive_df = customers_df[['customer_id', 'cluster']].merge(churn_df, on='customer_id', how='left')
         if pca_df is not None:
             predictive_df = predictive_df.merge(pca_df, on='customer_id', how='left')
@@ -538,9 +641,9 @@ def load_and_generate_data():
         spent = customers_raw_ids
         spent_norm = 1 - (spent - spent.min()) / (spent.max() - spent.min() + 1e-9)
         predictive_df = customers_df[['customer_id', 'cluster']].copy()
-        predictive_df['churn_probability'] = predictive_df['customer_id'].map(spent_norm).round(3)
+        predictive_df['churn_probability_final'] = predictive_df['customer_id'].map(spent_norm).round(3)
         predictive_df['churn_risk'] = pd.cut(
-            predictive_df['churn_probability'], bins=[-0.01, 0.35, 0.65, 1.0],
+            predictive_df['churn_probability_final'], bins=[-0.01, 0.35, 0.65, 1.0],
             labels=['Faible/Low', 'Moyen/Medium', 'Élevé/High']
         )
         predictive_df['clv'] = predictive_df['customer_id'].map(spent) * 2.5
@@ -561,7 +664,7 @@ except FileNotFoundError as e:
     st.error(
         f"Fichier de données introuvable : {e.filename}\n\n"
         f"Vérifie que segments_clients.csv et marketing_kpis.csv sont bien dans "
-        f"data/processed/test/ à la racine du repo."
+        f"data/processed à la racine du repo."
     )
     st.stop()
 
@@ -575,22 +678,14 @@ except FileNotFoundError as e:
 with st.sidebar:
     lang = st.radio("Language / Langue", options=['FR', 'EN'], horizontal=True)
     t = TEXTS[lang]
-    st.markdown(
-        f'<div class="brand-row">'
-        f'<span class="brand-badge">{svg_icon("logo", size=20)}</span>'
-        f'<div><div class="brand-name">{t["brand_name"]}</div>'
-        f'<div class="brand-sub">{t["brand_sub"]}</div></div></div>',
-        unsafe_allow_html=True
-    )
     
-    st.markdown("---")
     st.markdown(
         f'<div class="section-title" style="margin-bottom:0.3rem;">'
         f'<span class="section-title-icon">{svg_icon("tab_clusters", 15)}</span>'
         f'<span style="font-size:15px;">{t["sidebar_filters"]}</span></div>',
         unsafe_allow_html=True
     )
-    
+        
     # Segment Filter
     segment_options = [t['all']] + list(customers_df['cluster'].unique())
     selected_segment = st.selectbox(t['segment_filter'], options=segment_options)
@@ -598,6 +693,33 @@ with st.sidebar:
     # Channel Filter
     channel_options = [t['all']] + list(mkt_df['channel'].unique())
     selected_channel = st.selectbox(t['channel_filter'], options=channel_options)
+
+    st.markdown(
+        f'<div class="section-title" style="margin-bottom:0.3rem;">'
+        f'<span class="section-title-icon">{svg_icon("tab_clusters", 15)}</span>'
+        f'<span style="font-size:15px;">Actions</span></div>',
+        unsafe_allow_html=True
+    )
+
+    def set_active_tab(tab_number):
+        st.session_state.active_tab = tab_number
+
+    if 'active_tab' not in st.session_state:
+        st.session_state.active_tab = 1
+
+    for i, label_key in enumerate(['tab1', 'tab2', 'tab3', 'tab4'], start=1):
+        st.button(
+            t[label_key],
+            key=f"navtab_{i}",
+            use_container_width=True,
+            type="primary" if st.session_state.active_tab == i else "secondary",
+            on_click=set_active_tab,
+            args=(i,),
+        )
+
+    active_tab = st.session_state.active_tab
+
+    st.markdown("---")
  
 # Filter Data Logic
 filtered_cust = customers_df.copy()
@@ -642,7 +764,7 @@ col_kpi1, col_kpi2, col_kpi3, col_kpi4 = st.columns(4)
 total_rev = filtered_cust['total_spent'].sum()
 active_cust = filtered_cust['customer_id'].nunique()
 avg_roi = filtered_mkt['roi'].mean()
-avg_churn = filtered_pred['churn_probability'].mean() * 100
+avg_churn = filtered_pred['churn_probability_final'].mean() * 100
  
 with col_kpi1:
     st.markdown(f"""
@@ -676,11 +798,11 @@ with col_kpi3:
  
 with col_kpi4:
     st.markdown(f"""
-        <div class="kpi-card">
-            <div class="kpi-icon-wrap warning">{svg_icon('churn', 18)}</div>
+        <div class="kpi-card warning-card">
+            <div class="kpi-icon-wrap warning">{svg_icon('churn', 18, color='#C0623D')}</div>
             <div class="kpi-title">{t['kpi_churn']}</div>
             <div class="kpi-value">{avg_churn:.1f} %</div>
-            <div class="kpi-sub">Alerte Rétention M6</div>
+            <div class="kpi-sub">Alerte Rétention</div>
         </div>
     """, unsafe_allow_html=True)
  
@@ -688,24 +810,6 @@ with col_kpi4:
  
 st.markdown("<br>", unsafe_allow_html=True)
 
-
-
-# 6. TABS CONTENT
-
-if 'active_tab' not in st.session_state:
-    st.session_state.active_tab = 1
-
-nav_col1, nav_col2, nav_col3, nav_col4 = st.columns(4)
-nav_cols = {1: nav_col1, 2: nav_col2, 3: nav_col3, 4: nav_col4}
-for i, label_key in enumerate(['tab1', 'tab2', 'tab3', 'tab4'], start=1):
-    with nav_cols[i]:
-        if st.button(
-            t[label_key], key=f"navtab_{i}", use_container_width=True,
-            type="primary" if st.session_state.active_tab == i else "secondary"
-        ):
-            st.session_state.active_tab = i
-
-active_tab = st.session_state.active_tab
 
 # TAB 2: MARKETING CAMPAIGNS (M5)
 
@@ -826,14 +930,14 @@ if active_tab == 4:
     
     with col_g:
         section_title(t['churn_dist'], 'tab_ai')
-        fig_churn = px.histogram(filtered_pred, x='churn_probability', color='churn_risk', nbins=20,
+        fig_churn = px.histogram(filtered_pred, x='churn_probability_final', color='churn_risk', nbins=20,
                                  color_discrete_map={'Faible/Low': '#34D399', 'Moyen/Medium': '#F5A524', 'Élevé/High': '#F87171'})
         style_chart(fig_churn, xaxis_title="Probabilité de Churn", yaxis_title="Nombre de Clients")
         st.plotly_chart(fig_churn, use_container_width=True)
         
     with col_h:
         section_title(t['clv_vs_churn'], 'tab_ai')
-        fig_clv = px.scatter(filtered_pred, x='churn_probability', y='clv', color='churn_risk',
+        fig_clv = px.scatter(filtered_pred, x='churn_probability_final', y='clv', color='churn_risk',
                              hover_data=['customer_id'],
                              color_discrete_map={'Faible/Low': '#34D399', 'Moyen/Medium': '#F5A524', 'Élevé/High': '#F87171'})
         style_chart(fig_clv, xaxis_title="Probabilité de Churn", yaxis_title="Valeur à Vie (CLV Ar)")
@@ -843,7 +947,7 @@ if active_tab == 4:
     section_title(t['feature_importance'], 'tab_ai')
     if FEATURE_IMPORTANCE_FILE.exists():
         fi_df = _norm_cols(pd.read_csv(FEATURE_IMPORTANCE_FILE)).sort_values('importance', ascending=True)
-        fig_fi = px.bar(fi_df, x='importance', y='feature', orientation='h',
+        fig_fi = px.bar(fi_df, x='importance', y='variable', orientation='h',
                          color_discrete_sequence=['#8B5CF6'])
         style_chart(fig_fi, xaxis_title="Importance", yaxis_title="")
         st.plotly_chart(fig_fi, use_container_width=True)
@@ -853,7 +957,7 @@ if active_tab == 4:
     st.markdown("---")
     section_title(t['export_churn'], 'download')
     high_risk_df = filtered_pred[filtered_pred['churn_risk'] == 'Élevé/High']
-    st.dataframe(high_risk_df[['customer_id', 'cluster', 'churn_probability', 'clv']], use_container_width=True)
+    st.dataframe(high_risk_df[['customer_id', 'cluster', 'churn_probability_final', 'clv']], use_container_width=True)
     
     csv_data = high_risk_df.to_csv(index=False).encode('utf-8')
     st.download_button(

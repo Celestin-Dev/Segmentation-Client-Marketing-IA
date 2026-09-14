@@ -1,5 +1,0 @@
-Cluster,Persona,Nb_clients,Age_moyen,Montant_moyen,Frequence_moyenne,Recence_moyenne_jours,Canal_prioritaire,Canal_secondaire,ROI_canal_prioritaire_pct,CPA_canal_prioritaire,Message_recommande,Part_budget_recommandee_pct
-0,Occasionnels,114,40.4,353.6,2.0,228.6,Social,Online,1209.8,6.49,Campagne de réactivation avec code promo de bienvenue,15
-1,Clients VIP,66,40.2,4131.1,21.4,24.8,Email,In-Store,8437.5,1.02,"Offres exclusives et avant-premières, programme de fidélité VIP",30
-2,Occasionnels,80,57.9,2589.4,14.4,44.5,Social,Online,1209.8,6.49,Campagne de réactivation avec code promo de bienvenue,15
-3,Jeunes actifs,140,24.9,2139.9,11.3,42.2,Online,Social,981.02,8.32,"Contenu mobile-first, influenceurs, nouveautés produits",30
