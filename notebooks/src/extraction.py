@@ -6,7 +6,7 @@ import pandas as pd
 def find_source_files(data_dir: Path) -> dict[str, Path]:
     """Detecte un CSV pour customers, products et sales sans le modifier."""
     found = {}
-    for table in ("customers", "products", "sales"):
+    for table in ("customers_data", "products_data", "sales_data"):
         matches = sorted(path for path in data_dir.glob("*.csv") if table in path.stem.lower())
         if not matches:
             raise FileNotFoundError(f"Aucun fichier CSV correspondant a '{table}' dans {data_dir}")
