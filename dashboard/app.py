@@ -116,6 +116,16 @@ CSS_THEME = """
         font-family: 'Inter', 'Segoe UI', sans-serif;
     }
     h1, h2, h3, h4, .stMarkdown p { font-family: 'Inter', 'Segoe UI', sans-serif; }
+
+    /* Supprime le bandeau sombre du header natif de Streamlit
+       (la barre avec le menu hamburger) au-dessus du header-bar custom */
+    header[data-testid="stHeader"] {
+        background: transparent;
+        box-shadow: none;
+    }
+    div[data-testid="stToolbar"] {
+        right: 1rem;
+    }
  
     /* Réduit l'espace mort en haut de page */
     .block-container { padding-top: 1.6rem; padding-bottom: 2rem; }
@@ -158,7 +168,7 @@ CSS_THEME = """
  
     /* En-tête principal */
     .header-bar {
-        background: linear-gradient(135deg, #230B62 0%, #14111C 100%);
+        background: #230B62;
         border: 1px solid transparent;
         border-radius: 14px;
         padding: 1.5rem 1.8rem;
@@ -192,7 +202,7 @@ CSS_THEME = """
  
     /* Cartes KPI */
     .kpi-card {
-        background: linear-gradient(160deg, #230B62 0%, #14111C 100%);
+        background: #230B62;
         border: 1px solid transparent;
         border-radius: 14px;
         padding: 1.3rem 1.3rem 1.15rem 1.3rem;
@@ -268,7 +278,7 @@ CSS_THEME = """
  
     /* Cartes de contenu (autour des graphiques) */
     .content-card {
-        background: linear-gradient(160deg, #230B62 0%, #14111C 100%);
+        background: #230B62;
         border: 1px solid transparent;
         border-radius: 14px;
         padding: 1.2rem 1.3rem 0.6rem 1.3rem;
@@ -348,6 +358,19 @@ CSS_THEME = """
     .stDownloadButton button {
         border-radius: 8px;
         font-weight: 600;
+        background-color: #FFFFFF !important;
+        color: #111111 !important;
+        border: 1px solid #FFFFFF !important;
+    }
+    .stDownloadButton button:hover {
+        background-color: #F2F2F2 !important;
+        color: #111111 !important;
+        border-color: #F2F2F2 !important;
+    }
+    .stDownloadButton button p,
+    .stDownloadButton button span,
+    .stDownloadButton button div {
+        color: #111111 !important;
     }
 </style>
 """
