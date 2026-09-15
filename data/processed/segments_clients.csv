@@ -1,0 +1,5 @@
+Customer_ID,Name,Age,Gender,Location,Join_Date,Total_Spent,last_purchase_date,purchase_frequency,monetary_total,total_quantity,favorite_category,favorite_brand,preferred_channel,nb_distinct_categories,recency_days,avg_basket_value,avg_quantity_per_purchase,tenure_days,cluster
+2001,Alice,28,Female,New York,2022-05-10,500.0,2023-01-17,2,190.0,5,Clothing,Brand A,Online,2,3,95.0,2.5,255,1
+2002,Bob,35,Male,Los Angeles,2022-06-15,750.0,2023-01-16,1,75.0,1,Clothing,Brand B,In-Store,1,4,75.0,1.0,219,0
+2003,Charlie,22,Male,Chicago,2022-07-20,300.0,2023-01-18,1,120.0,1,Outerwear,Brand D,In-Store,1,2,120.0,1.0,184,0
+2004,Diana,30,Female,Houston,2022-08-25,600.0,2023-01-19,1,90.0,2,Accessories,Brand E,Online,1,1,90.0,2.0,148,0
