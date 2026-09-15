@@ -1,22 +1,22 @@
 # Manipulation et analyse de données
-pandas==2.2.2
-numpy==1.26.4
+pandas
+numpy
 
 # Visualisation
-matplotlib==3.8.4
-seaborn==0.13.2
-plotly==5.22.0
+matplotlib
+seaborn
+plotly
 
 # Machine Learning (segmentation, prédiction)
-scikit-learn==1.4.2
-xgboost==2.0.3
-joblib==1.4.2
+scikit-learn
+xgboost
+joblib
 
 # Dashboard interactif
-streamlit==1.35.0
+streamlit
 
 # Lecture/écriture de fichiers
-openpyxl==3.1.2
+openpyxl
 
 #ipykernel
-ipykernel==6.29.4
+ipykernel
